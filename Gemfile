@@ -5,7 +5,7 @@ gem 'rails', '3.1.0'
 gem 'rake', '0.9.2'
 
 # MySQL Driver
-gem 'mysql2'
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.

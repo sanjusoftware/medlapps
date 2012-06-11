@@ -5,3 +5,37 @@ Migrating to CreateVoicemails (20111027221526)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-11 19:55:09 +0530
 Served asset /rails.png - 200 OK (5ms)
+  [1m[36m (7.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  SHOW search_path
+  [1m[36m (5.7ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35m (3.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateVoicemails (20111027221526)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (7.8ms)[0m  [1mCREATE TABLE "voicemails" ("id" serial primary key, "attachment_file_name" character varying(255), "attachment_content_type" character varying(255), "attachment_file_size" integer, "attachment_updated_at" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111027221526')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.2ms)[0m  [1mSHOW search_path[0m
+  [1m[35m (2.6ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'voicemails'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-11 22:54:51 +0530
+Served asset /rails.png - 304 Not Modified (1ms)

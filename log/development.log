@@ -1,0 +1,7 @@
+  [1m[36m (10.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateVoicemails (20111027221526)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-11 19:55:09 +0530
+Served asset /rails.png - 200 OK (5ms)

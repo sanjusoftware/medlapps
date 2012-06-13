@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
 
-  before_filter :authenticate
+  #before_filter :authenticate
 
 
   # Converts errors to array

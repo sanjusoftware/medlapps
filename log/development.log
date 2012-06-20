@@ -63,3 +63,72 @@ WARNING: Can't verify CSRF token authenticity
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
   [1m[35m (1.0ms)[0m  ROLLBACK
 Completed 422 Unprocessable Entity in 18ms (Views: 1.0ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/voicemails/new.json" for 127.0.0.1 at 2012-06-13 15:08:34 +0530
+  Processing by VoicemailsController#create as JSON
+  Parameters: {"attachment_file_name"=>"blabla", "attachment_content_type"=>"text", "attachment_file_size"=>"2"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 13ms
+
+RuntimeError (came here):
+  app/controllers/voicemails_controller.rb:16:in `block in create'
+  app/controllers/voicemails_controller.rb:5:in `create'
+
+Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started POST "/voicemails/new.json" for 127.0.0.1 at 2012-06-13 15:09:15 +0530
+  Processing by VoicemailsController#create as JSON
+  Parameters: {"attachment_file_name"=>"blabla", "attachment_content_type"=>"text", "attachment_file_size"=>"2"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 15ms
+
+RuntimeError (#<ActiveModel::Errors:0x007fd452a3cf40 @base=#<Voicemail id: nil, attachment_file_name: nil, attachment_content_type: nil, attachment_file_size: nil, attachment_updated_at: nil, created_at: nil, updated_at: nil>, @messages={:attachment_file_name=>["can't be empty"]}>):
+  app/controllers/voicemails_controller.rb:16:in `block in create'
+  app/controllers/voicemails_controller.rb:5:in `create'
+
+Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started POST "/voicemails/new.json" for 127.0.0.1 at 2012-06-13 15:12:12 +0530
+  Processing by VoicemailsController#create as JSON
+  Parameters: {"voicemail"=>{"attachment_file_name"=>"blabla", "attachment_content_type"=>"text", "attachment_file_size"=>"2"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (52.8ms)[0m  INSERT INTO "voicemails" ("attachment_content_type", "attachment_file_name", "attachment_file_size", "attachment_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["attachment_content_type", "text"], ["attachment_file_name", "blabla"], ["attachment_file_size", 2], ["attachment_updated_at", nil], ["created_at", Wed, 13 Jun 2012 09:42:12 UTC +00:00], ["updated_at", Wed, 13 Jun 2012 09:42:12 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 9393ms
+
+BitlyError (INVALID_URI - '500'):
+  app/models/voicemail.rb:10:in `bitly_url'
+  app/controllers/voicemails_controller.rb:10:in `block (2 levels) in create'
+  app/controllers/voicemails_controller.rb:5:in `create'
+
+Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started POST "/voicemails/new.json" for 127.0.0.1 at 2012-06-13 15:13:46 +0530
+  Processing by VoicemailsController#create as JSON
+  Parameters: {"voicemail"=>{"attachment_file_name"=>"blabla", "attachment_content_type"=>"text", "attachment_file_size"=>"2"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "voicemails" ("attachment_content_type", "attachment_file_name", "attachment_file_size", "attachment_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["attachment_content_type", "text"], ["attachment_file_name", "blabla"], ["attachment_file_size", 2], ["attachment_updated_at", nil], ["created_at", Wed, 13 Jun 2012 09:43:46 UTC +00:00], ["updated_at", Wed, 13 Jun 2012 09:43:46 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (1.3ms)[0m  COMMIT
+Completed 201 Created in 16ms (Views: 1.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-13 17:55:37 +0530
+Served asset /rails.png - 304 Not Modified (42ms)

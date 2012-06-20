@@ -1,8 +1,13 @@
 class Voicemail < ActiveRecord::Base
-  has_attached_file :attachment, { :url => "/uploads/voicemails/:hash.:extension", :hash_secret => "zF3$Vo~Zog.8j+NcN~s#02@kyh?eo:GB-)C46{MVQ,`39eylH(MB@/0TDRBR_A#t" }
+  has_attached_file :attachment,
+                    storage: :s3,
+                    s3_credentials: "#{Rails.root}/config/s3.yml",
+                    path: ":attachment/:id/:style.:extension"
+
+
   validates_attachment_presence :attachment
-  
-  
+
+
   # Shorten the URL
   def bitly_url(protocol, host)
     Bitly.use_api_version_3

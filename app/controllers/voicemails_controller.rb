@@ -7,7 +7,7 @@ class VoicemailsController < ApplicationController
         format.json do 
           render :status => :created, :json => {
             :id => @voicemail.id,
-            :bitly_url => @voicemail.bitly_url(request.protocol, request.host_with_port),
+            #:bitly_url => @voicemail.bitly_url(request.protocol, request.host_with_port),
             :url => request.protocol + request.host_with_port + @voicemail.attachment.url,
             :attachment_file_name => @voicemail.attachment_file_name
           }

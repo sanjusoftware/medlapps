@@ -15,7 +15,7 @@ class VoicemailsController < ApplicationController
 
 
   def create
-    @voicemail = Voicemail.new(params[:voicemail])
+    @voicemail = Voicemail.new(params[:attachment])
     
     respond_to do |format|
       if @voicemail.save

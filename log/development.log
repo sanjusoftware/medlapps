@@ -132,3 +132,615 @@ Completed 201 Created in 16ms (Views: 1.3ms | ActiveRecord: 4.7ms)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-13 17:55:37 +0530
 Served asset /rails.png - 304 Not Modified (42ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-20 09:39:35 +0530
+Served asset /rails.png - 200 OK (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-20 09:39:54 +0530
+Served asset /rails.png - 200 OK (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-20 09:40:23 +0530
+
+AbstractController::ActionNotFound (The action 'index' could not be found for VoicemailsController):
+  actionpack (3.2.2) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.2) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.2) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.2) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.2) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__1953771918406590375__call__2469640680680515459__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/sanjeevmishra/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/sanjeevmishra/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/sanjeevmishra/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-20 09:40:55 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[36mVoicemail Load (3.0ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" [0m
+Completed 500 Internal Server Error in 20ms
+
+ActionView::MissingTemplate (Missing template voicemails/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/sanjeevmishra/projects/medlapps/app/views"
+):
+  actionpack (3.2.2) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.2) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.2) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.2) lib/action_view/renderer/template_renderer.rb:29:in `determine_template'
+  actionpack (3.2.2) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.2) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.2) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.2) lib/abstract_controller/rendering.rb:109:in `_render_template'
+  actionpack (3.2.2) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.2) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.2) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.2) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.2) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.2) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.2) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/sanjeevmishra/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.2) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.2) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.2) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.2) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.2) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.2) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:414:in `_run__1118165170655659076__process_action__923274993707456987__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.2) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.2) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.2) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.2) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.2) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.2) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.2) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.2) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.2) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.2) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__1953771918406590375__call__2469640680680515459__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/sanjeevmishra/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/sanjeevmishra/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/sanjeevmishra/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-20 09:43:33 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[35mVoicemail Load (0.3ms)[0m  SELECT "voicemails".* FROM "voicemails" 
+  Rendered voicemails/index.html.erb within layouts/application (27.7ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (cannot load such file -- aws-sdk (You may need to install the aws-sdk gem)):
+    7: 
+    8:   <% @voicemails.each do |voicemail| %>
+    9:       <tr>
+    10:         <td><%= voicemail.attachment.url %></td>
+    11:         <td><%= link_to 'Destroy', voicemail, :confirm => 'Are you sure?', :method => :delete %></td>
+    12:       </tr>
+    13:   <% end %>
+  app/views/voicemails/index.html.erb:10:in `block in _app_views_voicemails_index_html_erb___1169453005481497842_70300239639180'
+  app/views/voicemails/index.html.erb:8:in `each'
+  app/views/voicemails/index.html.erb:8:in `_app_views_voicemails_index_html_erb___1169453005481497842_70300239639180'
+
+
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-20 09:44:24 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[36mVoicemail Load (1.5ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" [0m
+  Rendered voicemails/index.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (cannot load such file -- aws-sdk (You may need to install the aws-sdk gem)):
+    7: 
+    8:   <% @voicemails.each do |voicemail| %>
+    9:       <tr>
+    10:         <td><%= voicemail.attachment.url %></td>
+    11:         <td><%= link_to 'Destroy', voicemail, :confirm => 'Are you sure?', :method => :delete %></td>
+    12:       </tr>
+    13:   <% end %>
+  app/views/voicemails/index.html.erb:10:in `block in _app_views_voicemails_index_html_erb___1169453005481497842_70300239639180'
+  app/views/voicemails/index.html.erb:8:in `each'
+  app/views/voicemails/index.html.erb:8:in `_app_views_voicemails_index_html_erb___1169453005481497842_70300239639180'
+
+
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (88.2ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (99.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-20 09:44:55 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[36mVoicemail Load (0.7ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" [0m
+  Rendered voicemails/index.html.erb within layouts/application (14.3ms)
+Compiled application.css  (1ms)  (pid 68840)
+Compiled jquery.js  (2ms)  (pid 68840)
+Compiled jquery_ujs.js  (0ms)  (pid 68840)
+Compiled application.js  (28ms)  (pid 68840)
+Completed 200 OK in 216ms (Views: 207.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 09:44:56 +0530
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 09:44:56 +0530
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 09:44:56 +0530
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 09:44:56 +0530
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/voicemails/new" for 127.0.0.1 at 2012-06-20 09:46:54 +0530
+Processing by VoicemailsController#new as HTML
+  Rendered voicemails/new.html.erb within layouts/application (324.7ms)
+Completed 500 Internal Server Error in 328ms
+
+ActionView::Template::Error (undefined method `error_messages' for #<ActionView::Helpers::FormBuilder:0x007fe0ca2d7258>):
+    1: <h1>New Voicemail</h1>
+    2: 
+    3: <% form_for(@voicemail, :html => { :multipart => true }) do |f| %>
+    4:     <%= f.error_messages %>
+    5: 
+    6:     <p>
+    7:       <%= f.label :attachment %><br />
+  app/views/voicemails/new.html.erb:4:in `block in _app_views_voicemails_new_html_erb__2821461234196842852_70301733886840'
+  app/views/voicemails/new.html.erb:3:in `_app_views_voicemails_new_html_erb__2821461234196842852_70301733886840'
+  app/controllers/voicemails_controller.rb:10:in `new'
+
+
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.1ms)
+
+
+Started GET "/voicemails/new" for 127.0.0.1 at 2012-06-20 09:47:45 +0530
+Processing by VoicemailsController#new as HTML
+  Rendered voicemails/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 09:47:45 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 09:47:45 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 09:47:45 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 09:47:45 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/voicemails" for 127.0.0.1 at 2012-06-20 09:48:04 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[35mVoicemail Load (0.4ms)[0m  SELECT "voicemails".* FROM "voicemails" 
+  Rendered voicemails/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 09:48:04 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 09:48:04 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 09:48:04 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 09:48:04 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/voicemails/new" for 127.0.0.1 at 2012-06-20 09:48:06 +0530
+Processing by VoicemailsController#new as HTML
+  Rendered voicemails/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 09:48:06 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 09:48:06 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 09:48:06 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 09:48:06 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/voicemails/new" for 127.0.0.1 at 2012-06-20 09:48:38 +0530
+Processing by VoicemailsController#new as HTML
+  Rendered voicemails/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 09:48:38 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 09:48:38 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 09:48:38 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 09:48:38 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-20 09:48:46 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007fe0cbe17db0 @original_filename="Time Sheet.xls", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"Time Sheet.xls\"\r\nContent-Type: application/vnd.ms-excel\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120620-68840-1dd7wcv>>}, "commit"=>"Create"}
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (20.8ms)[0m  INSERT INTO "voicemails" ("attachment_content_type", "attachment_file_name", "attachment_file_size", "attachment_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["attachment_content_type", "application/vnd.ms-excel"], ["attachment_file_name", "Time_Sheet.xls"], ["attachment_file_size", 61440], ["attachment_updated_at", Wed, 20 Jun 2012 04:18:46 UTC +00:00], ["created_at", Wed, 20 Jun 2012 04:18:46 UTC +00:00], ["updated_at", Wed, 20 Jun 2012 04:18:46 UTC +00:00]]
+[paperclip] Saving attachments.
+[paperclip] saving attachments/3/original.xls
+  [1m[36m (1.6ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 61ms
+
+RuntimeError (Missing credentials):
+  app/controllers/voicemails_controller.rb:21:in `block in create'
+  app/controllers/voicemails_controller.rb:20:in `create'
+
+
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-20 10:00:50 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007fe0ca3ac818 @original_filename="Time Sheet.xls", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"Time Sheet.xls\"\r\nContent-Type: application/vnd.ms-excel\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120620-68840-k20l9b>>}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "voicemails" ("attachment_content_type", "attachment_file_name", "attachment_file_size", "attachment_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["attachment_content_type", "application/vnd.ms-excel"], ["attachment_file_name", "Time_Sheet.xls"], ["attachment_file_size", 61440], ["attachment_updated_at", Wed, 20 Jun 2012 04:30:50 UTC +00:00], ["created_at", Wed, 20 Jun 2012 04:30:50 UTC +00:00], ["updated_at", Wed, 20 Jun 2012 04:30:50 UTC +00:00]]
+[paperclip] Saving attachments.
+[paperclip] saving attachments/4/original.xls
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 166ms
+
+ArgumentError (missing required :bucket option):
+  app/controllers/voicemails_controller.rb:21:in `block in create'
+  app/controllers/voicemails_controller.rb:20:in `create'
+
+
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-20 10:01:32 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007fe0ccca6228 @original_filename="Time Sheet.xls", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"Time Sheet.xls\"\r\nContent-Type: application/vnd.ms-excel\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120620-68840-1re2uz2>>}, "commit"=>"Create"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "voicemails" ("attachment_content_type", "attachment_file_name", "attachment_file_size", "attachment_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["attachment_content_type", "application/vnd.ms-excel"], ["attachment_file_name", "Time_Sheet.xls"], ["attachment_file_size", 61440], ["attachment_updated_at", Wed, 20 Jun 2012 04:31:32 UTC +00:00], ["created_at", Wed, 20 Jun 2012 04:31:33 UTC +00:00], ["updated_at", Wed, 20 Jun 2012 04:31:33 UTC +00:00]]
+[paperclip] Saving attachments.
+[paperclip] saving attachments/5/original.xls
+[AWS S3 200 26.8015 0 retries] put_object(:acl=>:public_read,:bucket_name=>"yattervoicemails",:content_type=>"application/vnd.ms-excel",:data=>#<Paperclip::UploadedFileAdapter:0x007fe0c9af9978 @target=#<ActionDispatch::Http::UploadedFile:0x007fe0ccca6228 @original_filename="Time Sheet.xls", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"Time Sheet.xls\"\r\nContent-Type: application/vnd.ms-excel\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120620-68840-1re2uz2>>, @original_filename="Time Sheet.xls", @content_type="application/vnd.ms-excel", @size=61440, @destination=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/Time Sheet20120620-68840-j3iwlb.xls>, @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/Time Sheet20120620-68840-j3iwlb.xls>>,:key=>"attachments/5/original.xls")  
+
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Completed 406 Not Acceptable in 26873ms (ActiveRecord: 1.2ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-20 10:07:11 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007fe0cca874b0 @original_filename="me.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"me.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120620-68840-15itxfg>>}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "voicemails" ("attachment_content_type", "attachment_file_name", "attachment_file_size", "attachment_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["attachment_content_type", "image/jpeg"], ["attachment_file_name", "me.jpg"], ["attachment_file_size", 53164], ["attachment_updated_at", Wed, 20 Jun 2012 04:37:11 UTC +00:00], ["created_at", Wed, 20 Jun 2012 04:37:11 UTC +00:00], ["updated_at", Wed, 20 Jun 2012 04:37:11 UTC +00:00]]
+[paperclip] Saving attachments.
+[paperclip] saving attachments/6/original.jpg
+[AWS S3 200 14.121187 0 retries] put_object(:acl=>:public_read,:bucket_name=>"yattervoicemails",:content_type=>"image/jpeg",:data=>#<Paperclip::UploadedFileAdapter:0x007fe0cd866658 @target=#<ActionDispatch::Http::UploadedFile:0x007fe0cca874b0 @original_filename="me.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"me.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120620-68840-15itxfg>>, @original_filename="me.jpg", @content_type="image/jpeg", @size=53164, @destination=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/me20120620-68840-v8ble0.jpg>, @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/me20120620-68840-v8ble0.jpg>>,:key=>"attachments/6/original.jpg")  
+
+  [1m[35m (1.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/voicemails
+Completed 302 Found in 14141ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/voicemails" for 127.0.0.1 at 2012-06-20 10:07:25 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[36mVoicemail Load (0.4ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" [0m
+  Rendered voicemails/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 10:07:25 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 10:07:25 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 10:07:25 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 10:07:25 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/voicemails" for 127.0.0.1 at 2012-06-20 10:09:28 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[35mVoicemail Load (0.4ms)[0m  SELECT "voicemails".* FROM "voicemails" 
+  Rendered voicemails/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 26ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 10:09:28 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 10:09:28 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 10:09:28 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 10:09:28 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/voicemails/1" for 127.0.0.1 at 2012-06-20 10:09:32 +0530
+Processing by VoicemailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "id"=>"1"}
+  [1m[36mVoicemail Load (0.9ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" WHERE "voicemails"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+[paperclip] Scheduling attachments for deletion.
+[AWS S3 404 1.774033 0 retries] head_object(:bucket_name=>"yattervoicemails",:key=>"attachments/1/original.") AWS::S3::Errors::NoSuchKey No Such Key
+
+  [1m[36mSQL (2.9ms)[0m  [1mDELETE FROM "voicemails" WHERE "voicemails"."id" = $1[0m  [["id", 1]]
+[paperclip] Deleting attachments.
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/voicemails
+Completed 302 Found in 1786ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/voicemails" for 127.0.0.1 at 2012-06-20 10:09:33 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[36mVoicemail Load (0.5ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" [0m
+  Rendered voicemails/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 10:09:33 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 10:09:33 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 10:09:33 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 10:09:33 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/voicemails/2" for 127.0.0.1 at 2012-06-20 10:09:37 +0530
+Processing by VoicemailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "id"=>"2"}
+  [1m[35mVoicemail Load (0.4ms)[0m  SELECT "voicemails".* FROM "voicemails" WHERE "voicemails"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+[paperclip] Scheduling attachments for deletion.
+[AWS S3 404 2.370369 0 retries] head_object(:bucket_name=>"yattervoicemails",:key=>"attachments/2/original.") AWS::S3::Errors::NoSuchKey No Such Key
+
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "voicemails" WHERE "voicemails"."id" = $1  [["id", 2]]
+[paperclip] Deleting attachments.
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/voicemails
+Completed 302 Found in 2377ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/voicemails" for 127.0.0.1 at 2012-06-20 10:09:39 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[35mVoicemail Load (0.4ms)[0m  SELECT "voicemails".* FROM "voicemails" 
+  Rendered voicemails/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 10:09:39 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 10:09:39 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 10:09:39 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 10:09:39 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-20 10:12:03 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[36mVoicemail Load (0.4ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" [0m
+  Rendered voicemails/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 10:12:03 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 10:12:03 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 10:12:03 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 10:12:03 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-20 10:12:29 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[35mVoicemail Load (0.4ms)[0m  SELECT "voicemails".* FROM "voicemails" 
+  Rendered voicemails/index.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 10:12:29 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 10:12:29 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 10:12:29 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 10:12:29 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-20 10:12:49 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[36mVoicemail Load (0.4ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" [0m
+  Rendered voicemails/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-20 10:12:49 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-20 10:12:49 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-20 10:12:49 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 10:12:49 +0530
+Served asset /application.js - 304 Not Modified (0ms)

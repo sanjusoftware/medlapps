@@ -21,6 +21,7 @@ gem 'jquery-rails'
 
 # For file attachments.
 gem 'paperclip'
+gem 'aws-sdk'
 gem 'aws-s3'
 
 # Bitly

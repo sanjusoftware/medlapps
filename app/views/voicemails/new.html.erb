@@ -1,5 +1,19 @@
 <h1>New Voicemail</h1>
 
+<div class="notice"><%= notice %></div>
+
+<% if @voicemail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@voicemail.errors.count, "error") %> prohibited this epic from being saved:</h2>
+
+      <ul>
+        <% @voicemail.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
+
 <%= form_for(@voicemail, :html => { :multipart => true }) do |f| %>
     <p>
       <%= f.label :attachment %><br />

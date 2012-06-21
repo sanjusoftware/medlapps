@@ -7,7 +7,7 @@
 
   <% @voicemails.each do |voicemail| %>
       <tr>
-        <td><%= voicemail.attachment.url %></td>
+        <td><%= link_to voicemail.attachment_file_name, voicemail.attachment.url %></td>
         <td><%= link_to 'Destroy', voicemail, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
   <% end %>

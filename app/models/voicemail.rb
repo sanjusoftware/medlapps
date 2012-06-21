@@ -7,6 +7,7 @@ class Voicemail < ActiveRecord::Base
                       secret_access_key: S3[:secret]
                     },
                     bucket: S3[:bucket],
+                    url: ':s3_southeast_url',
                     path: ":attachment/:id/:style.:extension"
 
 

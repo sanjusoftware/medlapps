@@ -1,3 +1,7 @@
+Paperclip.interpolates(:s3_southeast_url) { |attachment, style|
+  "#{attachment.s3_protocol}//s3-ap-southeast-1.amazonaws.com/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/}, "")}"
+}
+
 if File.exists?("#{Rails.root}/config/s3.yml")
   s3_config = YAML.load_file("#{Rails.root}/config/s3.yml")
   S3 = {}

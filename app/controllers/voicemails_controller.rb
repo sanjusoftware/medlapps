@@ -9,18 +9,18 @@ class VoicemailsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @voicemail }
+      format.xml { render :xml => @voicemail }
     end
   end
 
 
   def create
-    @voicemail = Voicemail.new(params[:attachment])
-    
+    @voicemail = Voicemail.new(params[:voicemail])
+
     respond_to do |format|
       if @voicemail.save
         format.html { redirect_to(voicemails_path, :notice => 'Voice mail was successfully created.') }
-        format.json do 
+        format.json do
           render :status => :created, :json => {
             :id => @voicemail.id,
             #:bitly_url => @voicemail.bitly_url(request.protocol, request.host_with_port),
@@ -29,7 +29,8 @@ class VoicemailsController < ApplicationController
           }
         end
       else
-        format.json { render :status => :unprocessable_entity, :json => { :errors => errors_to_array(@voicemail.errors) } }
+        format.html { render :action => 'new' }
+        format.json { render :status => :unprocessable_entity, :json => {:errors => errors_to_array(@voicemail.errors)} }
       end
     end
   end

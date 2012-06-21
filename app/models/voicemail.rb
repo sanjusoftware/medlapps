@@ -1,12 +1,13 @@
 class Voicemail < ActiveRecord::Base
+
   has_attached_file :attachment,
-                    :storage => :s3,
-                    :s3_credentials => {
-                      :access_key_id => 'AKIAIYJMO7V7DDCCENUA',
-                      :secret_access_key => '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'
+                    storage: :s3,
+                    s3_credentials: {
+                      access_key_id: S3[:key],
+                      secret_access_key: S3[:secret]
                     },
-                    :bucket => "yattervoicemails",
-                    :path => ":attachment/:id/:style.:extension"
+                    bucket: S3[:bucket],
+                    path: ":attachment/:id/:style.:extension"
 
 
   validates_attachment_presence :attachment

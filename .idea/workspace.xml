@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa85198-0879-45ce-809d-76ea34b2e197" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/amazon_s3.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/pids/server.pid" afterPath="$PROJECT_DIR$/tmp/pids/server.pid" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/voicemails_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/voicemails_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/voicemail.rb" afterPath="$PROJECT_DIR$/app/models/voicemail.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/voicemails/new.html.erb" afterPath="$PROJECT_DIR$/app/views/voicemails/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/s3.yml" afterPath="$PROJECT_DIR$/config/s3.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="medlapps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,19 +44,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/voicemails/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="26" selection-start="220" selection-end="220" vertical-scroll-proportion="0.31746033">
+            <state line="8" column="26" selection-start="220" selection-end="220" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="s3.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="s3.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/s3.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="8" selection-start="15" selection-end="21" vertical-scroll-proportion="0.0">
+            <state line="5" column="4" selection-start="145" selection-end="145" vertical-scroll-proportion="0.18656716">
               <folding />
             </state>
           </provider>
@@ -97,11 +93,11 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/voicemails/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/s3.yml" />
         <option value="$PROJECT_DIR$/config/initializers/amazon_s3.rb" />
         <option value="$PROJECT_DIR$/app/controllers/voicemails_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/voicemails/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/voicemail.rb" />
+        <option value="$PROJECT_DIR$/config/s3.yml" />
       </list>
     </option>
   </component>
@@ -628,7 +624,11 @@
       <created>1340263520770</created>
       <updated>1340263520770</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="externalized the s3 credentials to be used form yml file">
+      <created>1340266730725</created>
+      <updated>1340266730725</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -693,7 +693,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed the param to be attachment" />
+    <option name="LAST_COMMIT_MESSAGE" value="externalized the s3 credentials to be used form yml file" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -710,6 +710,7 @@
     <MESSAGE value="removing the authentication for now" />
     <MESSAGE value="added the s3 config and supporting gem files" />
     <MESSAGE value="renamed the param to be attachment" />
+    <MESSAGE value="externalized the s3 credentials to be used form yml file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -792,20 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/s3.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="8" selection-start="15" selection-end="21" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/amazon_s3.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/voicemails_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="44" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
@@ -822,7 +809,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/voicemails/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="220" selection-end="220" vertical-scroll-proportion="0.31746033">
+        <state line="8" column="26" selection-start="220" selection-end="220" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/amazon_s3.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="3" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/s3.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="145" selection-end="145" vertical-scroll-proportion="0.18656716">
           <folding />
         </state>
       </provider>

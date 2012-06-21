@@ -744,3 +744,243 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-20 10:12:49 +0530
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-21 13:23:09 +0530
+
+SyntaxError (/Users/sanjeevmishra/projects/medlapps/app/models/voicemail.rb:10: syntax error, unexpected ':', expecting tASSOC
+                    path : ":attachment/:id/:style.:extension"
+                          ^):
+  app/controllers/voicemails_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+  Rendered /Users/sanjeevmishra/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-21 13:24:05 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[36mVoicemail Load (1.5ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" [0m
+  Rendered voicemails/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 46ms (Views: 36.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-21 13:24:05 +0530
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-21 13:24:05 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-21 13:24:05 +0530
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-21 13:24:05 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/voicemails/new" for 127.0.0.1 at 2012-06-21 13:24:11 +0530
+Processing by VoicemailsController#new as HTML
+  Rendered voicemails/new.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-21 13:24:12 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-21 13:24:12 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-21 13:24:12 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-21 13:24:12 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-21 13:24:23 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007f8d169080a8 @original_filename="me.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"me.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120621-83874-1vq129>>}, "commit"=>"Create"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/voicemails/new" for 127.0.0.1 at 2012-06-21 13:24:52 +0530
+Processing by VoicemailsController#new as HTML
+  Rendered voicemails/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-21 13:25:21 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007f8d16dc44e8 @original_filename="Sanjeev Resume.doc", @content_type="application/msword", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"Sanjeev Resume.doc\"\r\nContent-Type: application/msword\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120621-83874-1yizzck>>}, "commit"=>"Create"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/voicemails/new" for 127.0.0.1 at 2012-06-21 13:29:26 +0530
+Processing by VoicemailsController#new as HTML
+  Rendered voicemails/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-21 13:30:24 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007f8d1308be28 @original_filename="Sanjeev Resume.doc", @content_type="application/msword", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"Sanjeev Resume.doc\"\r\nContent-Type: application/msword\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120621-83874-12cmztc>>}, "commit"=>"Create"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-21 13:33:41 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007f8d14c00000 @original_filename="Sanjeev Resume.doc", @content_type="application/msword", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"Sanjeev Resume.doc\"\r\nContent-Type: application/msword\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120621-83874-2s2lpa>>}, "commit"=>"Create"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered voicemails/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-21 13:33:57 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-21 13:34:05 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-21 13:34:05 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-21 13:34:05 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-21 13:39:35 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007f8d16c60598 @original_filename="Sanjeev Resume.doc", @content_type="application/msword", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"Sanjeev Resume.doc\"\r\nContent-Type: application/msword\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120621-83874-nmpdmd>>}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered voicemails/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 16ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-21 13:39:51 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-21 13:39:59 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-21 13:39:59 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-21 13:39:59 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-21 13:42:55 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007f8d15ae3b80 @original_filename="Sanjeev Resume.doc", @content_type="application/msword", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"Sanjeev Resume.doc\"\r\nContent-Type: application/msword\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120621-83874-zcf3tl>>}, "commit"=>"Create"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (20.3ms)[0m  [1mINSERT INTO "voicemails" ("attachment_content_type", "attachment_file_name", "attachment_file_size", "attachment_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["attachment_content_type", "application/msword"], ["attachment_file_name", "Sanjeev_Resume.doc"], ["attachment_file_size", 50176], ["attachment_updated_at", Thu, 21 Jun 2012 08:12:55 UTC +00:00], ["created_at", Thu, 21 Jun 2012 08:12:55 UTC +00:00], ["updated_at", Thu, 21 Jun 2012 08:12:55 UTC +00:00]]
+[paperclip] Saving attachments.
+[paperclip] saving attachments/7/original.doc
+[AWS S3 200 23.654063 1 retries] put_object(:acl=>:public_read,:bucket_name=>"yattervoicemails",:content_type=>"application/msword",:data=>#<Paperclip::UploadedFileAdapter:0x007f8d15dbe238 @target=#<ActionDispatch::Http::UploadedFile:0x007f8d15ae3b80 @original_filename="Sanjeev Resume.doc", @content_type="application/msword", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"Sanjeev Resume.doc\"\r\nContent-Type: application/msword\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120621-83874-zcf3tl>>, @original_filename="Sanjeev Resume.doc", @content_type="application/msword", @size=50176, @destination=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/Sanjeev Resume20120621-83874-1u1o4us.doc>, @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/Sanjeev Resume20120621-83874-1u1o4us.doc>>,:key=>"attachments/7/original.doc")  
+
+  [1m[35m (4.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/voicemails
+Completed 302 Found in 23909ms (ActiveRecord: 24.5ms)
+
+
+Started GET "/voicemails" for 127.0.0.1 at 2012-06-21 13:43:19 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[36mVoicemail Load (0.5ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" [0m
+  Rendered voicemails/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-21 13:43:19 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-21 13:43:19 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-21 13:43:19 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-21 13:43:19 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/voicemails/new" for 127.0.0.1 at 2012-06-21 13:45:13 +0530
+Processing by VoicemailsController#new as HTML
+  Rendered voicemails/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-21 13:45:36 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-21 13:45:36 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-21 13:45:36 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-21 13:45:36 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/voicemails" for 127.0.0.1 at 2012-06-21 13:45:58 +0530
+Processing by VoicemailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptzsg9XK3HLEMYYvVGX4Ggx0pMpZ8NbOmFTE//U+qo0=", "voicemail"=>{"attachment"=>#<ActionDispatch::Http::UploadedFile:0x007f8d16d5fa70 @original_filename="me.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"me.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120621-83874-10d1mbb>>}, "commit"=>"Upload"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "voicemails" ("attachment_content_type", "attachment_file_name", "attachment_file_size", "attachment_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["attachment_content_type", "image/jpeg"], ["attachment_file_name", "me.jpg"], ["attachment_file_size", 53164], ["attachment_updated_at", Thu, 21 Jun 2012 08:15:58 UTC +00:00], ["created_at", Thu, 21 Jun 2012 08:15:58 UTC +00:00], ["updated_at", Thu, 21 Jun 2012 08:15:58 UTC +00:00]]
+[paperclip] Saving attachments.
+[paperclip] saving attachments/8/original.jpg
+[AWS S3 200 7.472158 0 retries] put_object(:acl=>:public_read,:bucket_name=>"yattervoicemails",:content_type=>"image/jpeg",:data=>#<Paperclip::UploadedFileAdapter:0x007f8d16de2b28 @target=#<ActionDispatch::Http::UploadedFile:0x007f8d16d5fa70 @original_filename="me.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"voicemail[attachment]\"; filename=\"me.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/RackMultipart20120621-83874-10d1mbb>>, @original_filename="me.jpg", @content_type="image/jpeg", @size=53164, @destination=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/me20120621-83874-nmiafn.jpg>, @tempfile=#<File:/var/folders/yk/7vnmcpl56sq15sczdt_f76b40000gn/T/me20120621-83874-nmiafn.jpg>>,:key=>"attachments/8/original.jpg")  
+
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/voicemails
+Completed 302 Found in 7483ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/voicemails" for 127.0.0.1 at 2012-06-21 13:46:06 +0530
+Processing by VoicemailsController#index as HTML
+  [1m[36mVoicemail Load (0.4ms)[0m  [1mSELECT "voicemails".* FROM "voicemails" [0m
+  Rendered voicemails/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-21 13:46:06 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-21 13:46:06 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-21 13:46:06 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-21 13:46:06 +0530
+Served asset /application.js - 304 Not Modified (0ms)

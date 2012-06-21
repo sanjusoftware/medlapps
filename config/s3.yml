@@ -2,3 +2,13 @@ development:
   bucket: yattervoicemails
   access_key_id: AKIAIYJMO7V7DDCCENUA
   secret_access_key: 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
+
+test:
+  bucket: yattervoicemails
+  access_key_id: AKIAIYJMO7V7DDCCENUA
+  secret_access_key: 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
+
+production:
+  bucket: yattervoicemails
+  access_key_id: AKIAIYJMO7V7DDCCENUA
+  secret_access_key: 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

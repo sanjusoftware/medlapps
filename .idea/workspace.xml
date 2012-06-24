@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa85198-0879-45ce-809d-76ea34b2e197" name="Default" comment="" />
-    <list id="dd220251-59f3-417d-8359-20ab0c8488b0" name="do not commit" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-    </list>
+    <list id="dd220251-59f3-417d-8359-20ab0c8488b0" name="do not commit" comment="" />
     <ignored path="medlapps.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="4aa85198-0879-45ce-809d-76ea34b2e197" time="1340512999643" ignored="false" />
-    <file path="$PROJECT_DIR$/log/development.log" changelist="4aa85198-0879-45ce-809d-76ea34b2e197" time="1340272075138" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +53,7 @@
       <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="86" selection-start="312" selection-end="312" vertical-scroll-proportion="0.26">
+            <state line="19" column="45" selection-start="511" selection-end="511" vertical-scroll-proportion="0.38">
               <folding />
             </state>
           </provider>
@@ -934,7 +929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="86" selection-start="312" selection-end="312" vertical-scroll-proportion="0.26">
+        <state line="19" column="45" selection-start="511" selection-end="511" vertical-scroll-proportion="0.38">
           <folding />
         </state>
       </provider>
